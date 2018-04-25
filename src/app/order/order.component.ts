@@ -20,7 +20,7 @@ export class OrderComponent implements OnInit {
   ngOnInit() {
   }
 
-  cartIems(): CartItem[] {
+  cartItems(): CartItem[] {
     return this.orderService.carItems();
   }
 
