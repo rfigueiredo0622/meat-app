@@ -7,7 +7,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class RatingComponent implements OnInit {
 
   @Output() rated = new EventEmitter<number>();
-  rates: number[] = [1,2,3,4,5];
+  rates: number[] = [1, 2, 3, 4, 5];
   rate: number = 0;
 
   previousRate: number;
