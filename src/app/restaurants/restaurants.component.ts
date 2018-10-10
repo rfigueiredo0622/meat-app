@@ -15,12 +15,12 @@ import 'rxjs/add/operator/distinctUntilChanged';
     trigger('toggleSearch', [
       state('hidden', style({
         opacity: 0,
-        "max-height": "0px"
+        'max-height': '0px'
       })),
       state('visible', style({
         opacity: 1,
-        "max-height": "70px",
-        "margin-top": "20px"
+        'max-height': '70px',
+        'margin-top': '20px'
       })),
       transition('* => *', animate('250ms 0s ease-in-out'))
     ])
@@ -44,9 +44,9 @@ export class RestaurantsComponent implements OnInit {
     });
 
     this.searchControl.valueChanges
-                      .debounceTime(500) //tempo em milissegundos para fazer a query.
-                      .distinctUntilChanged() //só realiza a query se o valor digitado for diferente do último.
-                      .switchMap(searchTerm => 
+                      .debounceTime(500) // tempo em milissegundos para fazer a query.
+                      .distinctUntilChanged() // só realiza a query se o valor digitado for diferente do último.
+                      .switchMap(searchTerm =>
                         this.restaurantsService.restaurants(searchTerm))
                       .subscribe(restaurants => this.restaurants = restaurants);
 
