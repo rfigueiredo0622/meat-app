@@ -470,6 +470,26 @@
         }
       ],
       "id": 6
+    },
+    {
+      "name": "teste",
+      "email": "email@email.com",
+      "emailConfirmation": "email@email.com",
+      "address": "Av. Rio Branco",
+      "number": "1",
+      "optionalAddress": "",
+      "paymentOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        },
+        {
+          "quantity": 1,
+          "menuId": "donut"
+        }
+      ],
+      "id": 7
     }
   ]
 }
